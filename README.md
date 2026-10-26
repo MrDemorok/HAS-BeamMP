@@ -1,14 +1,18 @@
-# HAS-BeamMP
+# Hide and Seek for BeamMP
 
 ## English
+
 Hide and Seek (HAS) is a multiplayer game mode for BeamMP inspired by classic hide-and-seek. At the start of each round, one player is randomly chosen as the seeker while the others get time to hide. Once the hiding period ends, the seeker searches for the hiders and catches them by colliding with their vehicles; caught players join the seeking team. Hiders win by surviving until time runs out, while the seekers win by finding everyone. The mode includes in-game announcements, a round timer, role-based visual effects, and rules to limit vehicle recovery and switching exploits.
 
 ### Installation
+Double-click `Install-HAS.cmd` and enter the BeamMP server's root directory (the directory containing `Resources`) or the path to `BeamMP-Server.exe`. It runs `Install-HAS.ps1`, which downloads the latest files from the public `main` branch of this repository, installs `Server\HAS` to `Resources\Server\HAS`, and packages the contents of `Client` as `Resources\Client\HAS.zip`.
+
+You can also install manually:
 1. Copy `Server\HAS` to the BeamMP server's `Resources\Server` directory.
 2. Package the contents of `Client` as `HAS.zip` and place it in `Resources\Client`.
 3. Restart the server and clients, then use `/has help` in chat.
 
-   The resource uses BeamMP's Lua events and BeamNG's GE/vehicle Lua extensions, input action filters, HUD hooks, and PostEffect shader pipeline.
+The resource uses BeamMP's Lua events and BeamNG's GE/vehicle Lua extensions, input action filters, HUD hooks, and PostEffect shader pipeline.
 
 ### Commands
 - `/has start` - starts a round with all eligible connected players who have a vehicle.
@@ -32,11 +36,14 @@ Hide and Seek (HAS) to tryb multiplayer do BeamMP inspirowany klasyczną zabawą
 
 ### Instalacja
 
+Kliknij dwukrotnie `Install-HAS.cmd` i podaj katalog główny serwera BeamMP (folder zawierający `Resources`) albo ścieżkę do pliku `BeamMP-Server.exe`. Plik uruchomi `Install-HAS.ps1`, który pobierze najnowsze pliki z publicznej gałęzi `main`, zainstaluje `Server\HAS` w `Resources\Server\HAS` oraz spakuje zawartość `Client` do `Resources\Client\HAS.zip`.
+
+Instalacja ręczna:
 1. Skopiuj folder `Server\HAS` do folderu `Resources\Server` na serwerze BeamMP.
 2. Spakuj zawartość folderu `Client` do archiwum `HAS.zip` i umieść je w folderze `Resources\Client`.
 3. Uruchom ponownie serwer BeamMP i grę BeamNG u graczy. Następnie wpisz `/has help` na czacie w grze, aby wyświetlić listę komend.
 
-   Zasób korzysta ze zdarzeń Lua BeamMP oraz rozszerzeń GE i pojazdów BeamNG, filtrów akcji wejściowych, elementów HUD i potoku shaderów PostEffect.
+Zasób korzysta ze zdarzeń Lua BeamMP oraz rozszerzeń GE i pojazdów BeamNG, filtrów akcji wejściowych, elementów HUD i potoku shaderów PostEffect.
 
 ### Komendy
 
@@ -54,5 +61,3 @@ Hide and Seek (HAS) to tryb multiplayer do BeamMP inspirowany klasyczną zabawą
 Wylosowany szukający zostaje ogłoszony na początku odliczania. W tym czasie sterowanie pojazdem jest zablokowane, ale jego fizyka nie ulega zmianie. Po odliczaniu nicki graczy zostają ukryte, a szukający jest rozmyty i unieruchomiony na czas chowania. Chowający mogą odjechać i znaleźć kryjówkę. Po upływie czasu na chowanie szukający oraz złapani gracze mogą ruszyć; zderzenie pojazdu szukającego z chowającym łapie go i dołącza do drużyny szukających. Gracze, którzy stracą pojazd, mogą go odzyskać lub ponownie wczytać. Chowający wygrywają, jeśli czas rundy minie, a szukający — jeśli odnajdą wszystkich. Po zakończeniu rundy lub wyładowaniu rozszerzenia klienta przywracane są kolory pojazdów, widoczność nicków, efekt rozmycia i filtry akcji.
 
 Podczas rundy filtry akcji po stronie klienta blokują uczestnikom zmianę widoku kamery i otwarcie selektora pojazdów; próba zmiany pojazdu jest cofana. Zmodyfikowany klient może ominąć te ograniczenia. Szukający mogą odzyskać pojazd w dowolnym momencie. Chowający mogą go odzyskać, gdy ich pojazd pozostawał nieruchomy przez 10 sekund; HUD pokazuje pozostały czas oczekiwania i informuje, kiedy odzyskiwanie jest dostępne. Teleportacja i globalne resetowanie pozostają zablokowane.
-
-***UWAGA!!!*** ***NIE WSZYSTKIE FUNKCJĘ DZIAŁAJĄ***
