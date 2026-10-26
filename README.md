@@ -7,7 +7,7 @@ Hide and Seek (HAS) is a multiplayer game mode for BeamMP inspired by classic hi
 ### Installation
 Download and extract this repository, then follow the [Windows and Linux installer guide](README-Install.md).
 
-- **Windows:** double-click `Install-HAS.cmd`; keep `Install-HAS.ps1` in the same folder.
+- **Windows:** download and double-click `Install-HAS.cmd`. It downloads and runs the PowerShell installer automatically.
 - **Linux:** run `chmod +x Install-HAS.sh` and then `./Install-HAS.sh` in a terminal.
 
 Both installers ask for the BeamMP server directory containing `Resources` (or the path to the server executable). They install the server resource to `Resources/Server/HAS` and create `Resources/Client/HAS.zip`.
@@ -43,7 +43,7 @@ Hide and Seek (HAS) to tryb multiplayer do BeamMP inspirowany klasyczną zabawą
 
 Pobierz i rozpakuj to repozytorium, a następnie skorzystaj z [instrukcji instalacji dla Windows i Linux](README-Install.md).
 
-- **Windows:** kliknij dwukrotnie `Install-HAS.cmd`; plik `Install-HAS.ps1` musi znajdować się w tym samym folderze.
+- **Windows:** pobierz i kliknij dwukrotnie `Install-HAS.cmd`. Plik automatycznie pobierze i uruchomi instalator PowerShell.
 - **Linux:** uruchom w terminalu `chmod +x Install-HAS.sh`, a następnie `./Install-HAS.sh`.
 
 Oba instalatory poproszą o katalog serwera BeamMP zawierający `Resources` albo ścieżkę do pliku wykonywalnego serwera. Zainstalują zasób serwera w `Resources/Server/HAS` i utworzą `Resources/Client/HAS.zip`.
