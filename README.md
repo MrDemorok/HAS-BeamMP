@@ -5,7 +5,12 @@
 Hide and Seek (HAS) is a multiplayer game mode for BeamMP inspired by classic hide-and-seek. At the start of each round, one player is randomly chosen as the seeker while the others get time to hide. Once the hiding period ends, the seeker searches for the hiders and catches them by colliding with their vehicles; caught players join the seeking team. Hiders win by surviving until time runs out, while the seekers win by finding everyone. The mode includes in-game announcements, a round timer, role-based visual effects, and rules to limit vehicle recovery and switching exploits.
 
 ### Installation
-Double-click `Install-HAS.cmd` and enter the BeamMP server's root directory (the directory containing `Resources`) or the path to `BeamMP-Server.exe`. It runs `Install-HAS.ps1`, which downloads the latest files from the public `main` branch of this repository, installs `Server\HAS` to `Resources\Server\HAS`, and packages the contents of `Client` as `Resources\Client\HAS.zip`.
+Download and extract this repository, then follow the [Windows and Linux installer guide](README-Install.md).
+
+- **Windows:** double-click `Install-HAS.cmd`; keep `Install-HAS.ps1` in the same folder.
+- **Linux:** run `chmod +x Install-HAS.sh` and then `./Install-HAS.sh` in a terminal.
+
+Both installers ask for the BeamMP server directory containing `Resources` (or the path to the server executable). They install the server resource to `Resources/Server/HAS` and create `Resources/Client/HAS.zip`.
 
 You can also install manually:
 1. Copy `Server\HAS` to the BeamMP server's `Resources\Server` directory.
@@ -36,7 +41,12 @@ Hide and Seek (HAS) to tryb multiplayer do BeamMP inspirowany klasyczną zabawą
 
 ### Instalacja
 
-Kliknij dwukrotnie `Install-HAS.cmd` i podaj katalog główny serwera BeamMP (folder zawierający `Resources`) albo ścieżkę do pliku `BeamMP-Server.exe`. Plik uruchomi `Install-HAS.ps1`, który pobierze najnowsze pliki z publicznej gałęzi `main`, zainstaluje `Server\HAS` w `Resources\Server\HAS` oraz spakuje zawartość `Client` do `Resources\Client\HAS.zip`.
+Pobierz i rozpakuj to repozytorium, a następnie skorzystaj z [instrukcji instalacji dla Windows i Linux](README-Install.md).
+
+- **Windows:** kliknij dwukrotnie `Install-HAS.cmd`; plik `Install-HAS.ps1` musi znajdować się w tym samym folderze.
+- **Linux:** uruchom w terminalu `chmod +x Install-HAS.sh`, a następnie `./Install-HAS.sh`.
+
+Oba instalatory poproszą o katalog serwera BeamMP zawierający `Resources` albo ścieżkę do pliku wykonywalnego serwera. Zainstalują zasób serwera w `Resources/Server/HAS` i utworzą `Resources/Client/HAS.zip`.
 
 Instalacja ręczna:
 1. Skopiuj folder `Server\HAS` do folderu `Resources\Server` na serwerze BeamMP.
