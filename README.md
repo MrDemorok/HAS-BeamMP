@@ -5,7 +5,7 @@
 Hide and Seek (HAS) is a multiplayer game mode for BeamMP inspired by classic hide-and-seek. At the start of each round, one player is randomly chosen as the seeker while the others get time to hide. Once the hiding period ends, the seeker searches for the hiders and catches them by colliding with their vehicles; caught players join the seeking team. Hiders win by surviving until time runs out, while the seekers win by finding everyone. The mode includes in-game announcements, a round timer, role-based visual effects, and rules to limit vehicle recovery and switching exploits.
 
 ### Installation
-Download and extract this repository, then follow the [Windows and Linux installer guide](README-Install.md).
+Download the [installer release](https://github.com/MrDemorok/HAS-BeamMP/releases/tag/Instaler) or browse the [main repository](https://github.com/MrDemorok/HAS-BeamMP), then follow the [Windows and Linux installer guide](README-Install.md).
 
 - **Windows:** download and double-click `Install-HAS.cmd`. It downloads and runs the PowerShell installer automatically.
 - **Linux:** run `chmod +x Install-HAS.sh` and then `./Install-HAS.sh` in a terminal.
@@ -41,7 +41,7 @@ Hide and Seek (HAS) to tryb multiplayer do BeamMP inspirowany klasyczną zabawą
 
 ### Instalacja
 
-Pobierz i rozpakuj to repozytorium, a następnie skorzystaj z [instrukcji instalacji dla Windows i Linux](README-Install.md).
+Pobierz instalator z [wydania instalatora](https://github.com/MrDemorok/HAS-BeamMP/releases/tag/Instaler) lub przejrzyj [główne repozytorium](https://github.com/MrDemorok/HAS-BeamMP), a następnie skorzystaj z [instrukcji instalacji dla Windows i Linux](README-Install.md).
 
 - **Windows:** pobierz i kliknij dwukrotnie `Install-HAS.cmd`. Plik automatycznie pobierze i uruchomi instalator PowerShell.
 - **Linux:** uruchom w terminalu `chmod +x Install-HAS.sh`, a następnie `./Install-HAS.sh`.
